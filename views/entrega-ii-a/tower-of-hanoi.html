@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="/entrega-ii-a/scripts.js"></script>
+    <title>Torre de Hanoi - Entrega II</title>
+</head>
+<body>
+
+<h2>Torre de hanoi</h2>
+
+<legend>Conversor de nome - ABNT</legend>
+
+
+<div class="input-block">
+    <lable>Quantos discos tem sua torre?</lable>
+    <input type="number" id="quntDiscos" value="3" placeholder="Escreva a quantidade de pinos">
+</div>
+<button onclick="tower(parseInt(document.querySelector('#quntDiscos').value))">Calcular movimentos</button>
+<p>Movimentos: </p>
+<div id="disks"></div>
+</body>
+</html>
