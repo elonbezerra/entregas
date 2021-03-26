@@ -1,46 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Produtos | VGA store</title>
-    <link rel="stylesheet" href="/styles/entrega-i-a/style.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="shortcut icon" href="./images/favico.png" type="image/x-icon" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <img alt="" src="/images/firstSubmissionA/logo.png" width="125px"/>
-        </div>
-        <nav>
-          <ul id="MenuItems">
-            <li><a href="/firstSubmission">Inicio</a></li>
-            <li><a href="/firstSubmission/produto">Produtos</a></li>
-            <li><a href="/firstSubmission/news">Sobre Tech</a></li>
-            <li><a href="/firstSubmission/contato">Contato</a></li>
-            <li><a href="">Conta</a></li>
-          </ul>
-        </nav>
-        <a href="/carrinho.html">
-          <img
-            alt=""
-            src="/images/firstSubmissionA/cart.png"
-            width="30px"
-            height="30px"
-          />
-        </a>
-        <img alt="" src="/images/firstSubmissionA/menu.png" class="menu-icon"/>
-      </div>
-    </div>
+{% extends "firstSubmissionA/layout.html" %}
 
+{% block head %}<title>Produtos | VGA store</title>{% endblock %}
+
+{% block container1 %}<div class="container">{% endblock %}
+{% block container2 %}</div>{% endblock %}
+
+{% block body %}
     <!---------carrinho---------->
     <div class="small-container pagina-carrinho">
       <table>
@@ -115,44 +80,4 @@
       </div>
       <a href="#" class="btn">Finalizar compra</a>
     </div>
-    <!---------pe---------->
-    <div class="pe">
-      <div class="container">
-        <div class="row">
-          <div class="pe-col-1">
-            <h3>Faca o donwload do nosso app!</h3>
-            <p>Donwload aplicativo para telefones Andoid e ios.</p>
-            <div class="app-logo">
-              <img alt="" src="/images/firstSubmissionA/play-store.png"/>
-              <img alt="" src="/images/firstSubmissionA/app-store.png"/>
-            </div>
-          </div>
-          <div class="pe-col-2">
-            <img alt="" src="/images/firstSubmissionA/logo-white.png"/>
-            <p>Nosso objeivo e trazer tecnologia a voce.</p>
-          </div>
-          <div class="pe-col-3">
-            <h3>Links uteis</h3>
-            <ul>
-              <li>Coupons</li>
-              <li>Blog</li>
-              <li>Politica de privacidade</li>
-              <li>Entre para o nosso time!</li>
-            </ul>
-          </div>
-          <div class="pe-col-4">
-            <h3>Nos siga</h3>
-            <ul>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Instagram</li>
-              <li>Youtube</li>
-            </ul>
-          </div>
-        </div>
-        <hr />
-        <p class="copyright">Copyright 2021 - Elon/Pedro</p>
-      </div>
-    </div>
-  </body>
-</html>
+{% endblock %}

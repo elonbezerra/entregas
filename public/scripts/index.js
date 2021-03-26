@@ -11,6 +11,7 @@ const app = express();
 
 app.use(express.static("views"));
 app.use(express.static("public"));
+app.use(express.static("src"));
 
 app.set("view engine", "html");
 

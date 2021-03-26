@@ -1,41 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+{% extends "firstSubmissionA/layout.html" %}
+
+{% block head %}
     <title>Produtos | VGA store</title>
-    <link rel="stylesheet" href="./public/style/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="shortcut icon" href="./images/favico.png" type="image/x-icon" />
-  </head>
+{% endblock %}
 
-  <body>
-    <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <img alt="" src="images/logo.png" width="125px" />
-        </div>
-        <nav>
-          <ul id="MenuItems">
-            <li><a href="/firstSubmission">Inicio</a></li>
-            <li><a href="/firstSubmission/produto">Produtos</a></li>
-            <li><a href="/firstSubmission/news">Sobre Tech</a></li>
-            <li><a href="/firstSubmission/contato">Contato</a></li>
-          </ul>
-        </nav>
-        <a href="/carrinho.html">
-          <img src="images/cart.png" width="30px" height="30px" alt="" />
-        </a>
-        <img src="images/menu.png" class="menu-icon" alt="" />
-      </div>
-    </div>
-
+{% block container1 %}<div class="container">{% endblock %}
+{% block container2 %}</div>{% endblock %}
+{% block body %}
     <div class="small-container">
       <div class="row row-2">
         <h2>Todos os Produtos</h2>
@@ -50,7 +21,7 @@
 
       <div class="row">
         <div class="col-4">
-          <img src="images/product-1.jpg" alt="" />
+          <img src="/images/firstSubmissionA/product-1.jpg" alt="" />
           <h4>Processador Intel Core i9-10900K</h4>
           <div class="classificação">
             <i class="fa fa-star"></i>
@@ -62,7 +33,7 @@
           <p>R$4.224,60</p>
         </div>
         <div class="col-4">
-          <img alt="" src="images/product-2.jpg" />
+          <img alt="" src="/images/firstSubmissionA/product-2.jpg" />
           <h4>Placa de Vídeo EVGA RTX 3090</h4>
           <div class="classificação">
             <i class="fa fa-star"></i>
@@ -74,7 +45,7 @@
           <p>R$24.024,90</p>
         </div>
         <div class="col-4">
-          <img alt="" src="images/product-3.jpg" />
+          <img alt="" src="/images/firstSubmissionA/product-3.jpg" />
           <h4>Placa de Video PCYES RTX 3080</h4>
           <div class="classificação">
             <i class="fa fa-star"></i>
@@ -86,7 +57,7 @@
           <p>R$13.394,00</p>
         </div>
         <div class="col-4">
-          <img alt="" src="images/product-4.jpg" />
+          <img alt="" src="/images/firstSubmissionA/product-4.jpg" />
           <h4>Placa-Mãe AMD Asus Prime TRX40-Pro S</h4>
           <div class="classificação">
             <i class="fa fa-star"></i>
@@ -100,7 +71,7 @@
       </div>
       <div class="row">
         <div class="col-4">
-          <img alt="" src="images/product-5.jpg" />
+          <img alt="" src="/images/firstSubmissionA/product-5.jpg" />
           <h4>Placa de Vídeo Asus TUF3 NVIDIA GeForce GTX 1660 SUPER</h4>
           <div class="classificação">
             <i class="fa fa-star"></i>
@@ -112,7 +83,7 @@
           <p>R$4.435,18</p>
         </div>
         <div class="col-4">
-          <img alt="" src="images/product-6.jpg" />
+          <img alt="" src="/images/firstSubmissionA/product-6.jpg" />
           <h4>Placa de Vídeo Asus Dual AMD Radeon RX 5500 XT EVO</h4>
           <div class="classificação">
             <i class="fa fa-star"></i>
@@ -124,7 +95,7 @@
           <p>R$3.694,00</p>
         </div>
         <div class="col-4">
-          <img alt="" src="images/product-7.jpg" />
+          <img alt="" src="/images/firstSubmissionA/product-7.jpg" />
           <h4>Placa de Vídeo MSI NVIDIA GeForce GTX 1650 D6 VENTUS XS OCV1</h4>
           <div class="classificação">
             <i class="fa fa-star"></i>
@@ -136,7 +107,7 @@
           <p>R$3.694,00</p>
         </div>
         <div class="col-4">
-          <img alt="" src="images/product-8.jpg" />
+          <img alt="" src="/images/firstSubmissionA/product-8.jpg" />
           <h4>Placa de Vídeo Galax NVIDIA Geforce RTX 3070</h4>
           <div class="classificação">
             <i class="fa fa-star"></i>
@@ -150,7 +121,7 @@
       </div>
       <div class="row">
         <div class="col-4">
-          <img alt="" src="images/product-9.jpg" />
+          <img alt="" src="/images/firstSubmissionA/product-9.jpg" />
           <h4>Processador Intel Core i7-9700K Coffee Lake</h4>
           <div class="classificação">
             <i class="fa fa-star"></i>
@@ -162,7 +133,7 @@
           <p>R$2.941,06</p>
         </div>
         <div class="col-4">
-          <img alt="" src="images/product-10.jpg" />
+          <img alt="" src="/images/firstSubmissionA/product-10.jpg" />
           <h4>
             Processador Intel Core i7-10700K Marvel´s Avengers Collector´s
             Edition Packaging
@@ -177,7 +148,7 @@
           <p>R$3.176,35</p>
         </div>
         <div class="col-4">
-          <img alt="" src="images/product-11.jpg" />
+          <img alt="" src="/images/firstSubmissionA/product-11.jpg" />
           <h4>Placa-Mãe Asus Prime A320M-K/BR, AMD AM4, mATX, DDR4</h4>
           <div class="classificação">
             <i class="fa fa-star"></i>
@@ -189,7 +160,7 @@
           <p>R$588,12</p>
         </div>
         <div class="col-4">
-          <img alt="" src="images/product-12.jpg" />
+          <img alt="" src="/images/firstSubmissionA/product-12.jpg" />
           <h4>Placa-Mãe Asus ROG Strix B460-G Gaming</h4>
           <div class="classificação">
             <i class="fa fa-star"></i>
@@ -210,53 +181,4 @@
         <span>&#8594;</span>
       </div>
     </div>
-
-    <!---------pe---------->
-    <div class="pe">
-      <div class="container">
-        <div class="row">
-          <div class="pe-col-1">
-            <h3>Faca o download do nosso app!</h3>
-            <p>Download aplicativo para telefones Android e ios.</p>
-            <div class="app-logo">
-              <img alt="" src="images/play-store.png" />
-              <img alt="" src="images/app-store.png" />
-            </div>
-          </div>
-          <div class="pe-col-2">
-            <img alt="" src="images/logo-white.png" />
-            <p>Nosso objetivo e trazer tecnologia a voce.</p>
-          </div>
-          <div class="pe-col-3">
-            <h3>Links uteis</h3>
-            <ul>
-              <li>Coupons</li>
-              <li>Blog</li>
-              <li>Politica de privacidade</li>
-              <li>Entre para o nosso time!</li>
-            </ul>
-          </div>
-          <div class="pe-col-4">
-            <h3>Nos siga</h3>
-            <ul>
-              <li>
-                <a target="_blank" href="https://www.facebook.com">Facebook</a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.twitter.com">Twitter</a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.instagram.com">Instagram</a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.youtube.com">YouTube</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <hr />
-        <p class="copyright">Copyright 2021 - Elon/Pedro</p>
-      </div>
-    </div>
-  </body>
-</html>
+{% endblock %}

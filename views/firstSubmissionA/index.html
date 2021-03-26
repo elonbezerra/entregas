@@ -1,36 +1,15 @@
 {% extends "firstSubmissionA/layout.html" %}
 
-{% block title %}<title>VGA store</title>{% endblock %}
-
-{% block header %}
-<link rel="stylesheet" href="/styles/entrega-i-a/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="shortcut icon" href="/images/firstSubmissionA/favico.png" type="image/x-icon">
+{% block head %}
+<title>VGA store</title>
+<script defer src="/firstSubmissionA/scripts.js"></script>
 {% endblock %}
 
-<body>
-{% block body %}
-    <div class="header">
-        <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img alt="" src="/images/firstSubmissionA/logo.png" width="125px">
-            </div>
-            <nav>
-                <ul id="MenuItems">
-                    <li><a href="/firstSubmission">Inicio</a></li>
-                    <li><a href="/firstSubmission/produto">Produtos</a></li>
-                    <li><a href="/firstSubmission/news">Sobre Tech</a></li>
-                    <li><a href="/firstSubmission/contato">Contato</a></li>
-                    <li><a href="">Conta</a></li>
-                </ul>
-                </nav>
-                <a href="carrinho.html">
-                    <img alt="" src="/images/firstSubmissionA/cart.png" width="30px" height="30px">
-                </a>
-                    <img alt="" src="/images/firstSubmissionA/menu.png" class="menu-icon">
-        </div>
+{% block container1 %}
+<div class="header">
+    <div class="container">
+{% endblock %}
+{% block container2 %}
         <div class="row">
             <div class="col-2">
                 <h1>Dê novos poderes<br>ao seu PC!</h1>
@@ -38,231 +17,232 @@
                 <a href="" class="btn">Conheça &#x2794;</a>
             </div>
             <div class="col-2">
-                <img alt="" src="/images/firstSubmissionA\image1.png">
+                <img alt="" src="/images/firstSubmissionA/image1.png">
             </div>
         </div>
     </div>
-  </div>
-
+</div>
+{% endblock %}
+{% block body %}
 <!------------ categoria ------------>
-  <div class="categorias">
-      <div class="small-container">
+<div class="categorias">
+    <div class="small-container">
         <div class="row">
             <div class="col-3">
-                  <img alt="" src="/images/firstSubmissionA/category-1.jpg">
+                <img alt="" src="/images/firstSubmissionA/category-1.jpg">
             </div>
             <div class="col-3">
-                  <img alt="" src="/images/firstSubmissionA/category-2.jpg">
+                <img alt="" src="/images/firstSubmissionA/category-2.jpg">
             </div>
             <div class="col-3">
-                  <img alt="" src="/images/firstSubmissionA/category-3.jpg">
-            </div>
-        </div>
-      </div>
-
-  </div>
-<!------------ Produtos ------------>
-    <div class="small-container">
-        <h2 class="Titulo">Produtos em destaque</h2>
-            <div class="row">
-                <div class="col-4 item" id="fd8N1NvpYXs">
-                    <img alt="" src="/images/firstSubmissionA/product-1.jpg">
-                    <h4>Processador Intel Core i9-10900K</h4>
-                    <div class="classificação">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>R$4.224,60</p>
-                </div>
-                <div class="col-4 item" id="FXJuqme1oak">
-                    <img alt="" src="/images/firstSubmissionA/product-2.jpg">
-                    <h4>Placa de Vídeo EVGA RTX 3090</h4>
-                    <div class="classificação">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>R$24.024,90</p>
-                </div>
-                <div class="col-4 item" id="CihOaXBDaiA">
-                    <img alt="" src="/images/firstSubmissionA/product-3.jpg">
-                    <h4>Placa de Video PCYES RTX 3080</h4>
-                    <div class="classificação">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                    </div>
-                    <p>R$13.394,00</p>
-                </div>
-                <div class="col-4 item" id="irooraKxFlw">
-                    <img alt="" src="/images/firstSubmissionA/product-4.jpg">
-                    <h4>Placa-Mãe AMD Asus Prime TRX40-Pro S</h4>
-                    <div class="classificação">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>R$4.705,76</p>
-                </div>
-            </div>
-            <h2 class="Titulo">Produtos mais recentes</h2>
-            <div class="row">
-                <div class="col-4 item" id="9j3yBOvtRn8">
-                    <img alt="" src="/images/firstSubmissionA/product-5.jpg">
-                    <h4>Placa de Vídeo Asus TUF3 NVIDIA GeForce GTX 1660 SUPER</h4>
-                    <div class="classificação">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>R$4.435,18</p>
-                </div>
-                <div class="col-4 item" id="kIZadUTqWfM">
-                    <img alt="" src="/images/firstSubmissionA/product-6.jpg">
-                    <h4>Placa de Vídeo Asus Dual AMD Radeon RX 5500 XT EVO</h4>
-                    <div class="classificação">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>R$3.694,00</p>
-                </div>
-                <div class="col-4 item" id="enG5q2KLSeQ">
-                    <img alt="" src="/images/firstSubmissionA/product-7.jpg">
-                    <h4>Placa de Vídeo MSI NVIDIA GeForce GTX 1650 D6 VENTUS XS OCV1</h4>
-                    <div class="classificação">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                    </div>
-                    <p>R$3.694,00</p>
-                </div>
-                <div class="col-4 item" id="qG5h3Ex2SQ8">
-                    <img alt="" src="/images/firstSubmissionA/product-8.jpg">
-                    <h4>Placa de Vídeo Galax NVIDIA Geforce RTX 3070</h4>
-                    <div class="classificação">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>R$10.217,53</p>
-                </div>
-                <div class="row">
-                    <div class="col-4 item" id="rvDU7xGHpNo">
-                        <img alt="" src="/images/firstSubmissionA/product-9.jpg">
-                        <h4>Processador Intel Core i7-9700K Coffee Lake</h4>
-                        <div class="classificação">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>R$2.941,06</p>
-                    </div>
-                    <div class="col-4 item" id="YntgeH-Me3g">
-                        <img alt="" src="/images/firstSubmissionA/product-10.jpg">
-                        <h4>Processador Intel Core i7-10700K Marvel´s Avengers Collector´s Edition Packaging</h4>
-                        <div class="classificação">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>R$3.176,35</p>
-                    </div>
-                    <div class="col-4 item" id="p_mrVVPXmzA">
-                        <img alt="" src="/images/firstSubmissionA/product-11.jpg">
-                        <h4>Placa-Mãe Asus Prime A320M-K/BR, AMD AM4, mATX, DDR4</h4>
-                        <div class="classificação">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                        </div>
-                        <p>R$588,12</p>
-                    </div>
-                    <div class="col-4 item" id="avwxParyPuI">
-                        <img alt="" src="/images/firstSubmissionA/product-12.jpg">
-                        <h4>Placa-Mãe Asus ROG Strix B460-G Gaming</h4>
-                        <div class="classificação">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>R$1.294,00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-<!------------ Ofertas ------------>
-    <div class="ofertas">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img alt="" src="/images/firstSubmissionA/exclusive.png" class="oferta-img">
-                </div>
-                <div class="col-2">
-                    <p>Exclusivo na VGA Store</p>
-                    <h1>Processador AMD Ryzen Threadripper 3990X</h1>
-                    <small>Tempo de renderização irrelevante, torne sua visão criativa uma realidade com o processador para desktop mais poderoso do mundo.
-                        Aprovado por Hollywood - O AMD Ryzen Threadripper da 3ª Geração já demonstrou seu valor para artistas de efeitos especiais de grandes estúdios de cinema.
-                    </small>
-                    <a class="btn">Compre Agora &#8594;</a>
-                </div>
+                <img alt="" src="/images/firstSubmissionA/category-3.jpg">
             </div>
         </div>
     </div>
-<!-------testemunhas------>
-    <div class="testemunha">
-        <div class="small-conteiner">
-            <div class="row">
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p> "Produto cumpre o que promete, desempenho de qualidade, só poderia ser Asus."</p>
-                    <div class="classificação">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <img alt="" src="/images/firstSubmissionA/user-1.png ">
-                    <h3>Caio Filho</h3>
+
+</div>
+<!------------ Produtos ------------>
+<div class="small-container">
+    <h2 class="Titulo">Produtos em destaque</h2>
+    <div class="row">
+        <div class="col-4 item" id="fd8N1NvpYXs">
+            <img alt="" src="/images/firstSubmissionA/product-1.jpg">
+            <h4>Processador Intel Core i9-10900K</h4>
+            <div class="classificação">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>R$4.224,60</p>
+        </div>
+        <div class="col-4 item" id="FXJuqme1oak">
+            <img alt="" src="/images/firstSubmissionA/product-2.jpg">
+            <h4>Placa de Vídeo EVGA RTX 3090</h4>
+            <div class="classificação">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>R$24.024,90</p>
+        </div>
+        <div class="col-4 item" id="CihOaXBDaiA">
+            <img alt="" src="/images/firstSubmissionA/product-3.jpg">
+            <h4>Placa de Video PCYES RTX 3080</h4>
+            <div class="classificação">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>R$13.394,00</p>
+        </div>
+        <div class="col-4 item" id="irooraKxFlw">
+            <img alt="" src="/images/firstSubmissionA/product-4.jpg">
+            <h4>Placa-Mãe AMD Asus Prime TRX40-Pro S</h4>
+            <div class="classificação">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>R$4.705,76</p>
+        </div>
+    </div>
+    <h2 class="Titulo">Produtos mais recentes</h2>
+    <div class="row">
+        <div class="col-4 item" id="9j3yBOvtRn8">
+            <img alt="" src="/images/firstSubmissionA/product-5.jpg">
+            <h4>Placa de Vídeo Asus TUF3 NVIDIA GeForce GTX 1660 SUPER</h4>
+            <div class="classificação">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>R$4.435,18</p>
+        </div>
+        <div class="col-4 item" id="kIZadUTqWfM">
+            <img alt="" src="/images/firstSubmissionA/product-6.jpg">
+            <h4>Placa de Vídeo Asus Dual AMD Radeon RX 5500 XT EVO</h4>
+            <div class="classificação">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>R$3.694,00</p>
+        </div>
+        <div class="col-4 item" id="enG5q2KLSeQ">
+            <img alt="" src="/images/firstSubmissionA/product-7.jpg">
+            <h4>Placa de Vídeo MSI NVIDIA GeForce GTX 1650 D6 VENTUS XS OCV1</h4>
+            <div class="classificação">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>R$3.694,00</p>
+        </div>
+        <div class="col-4 item" id="qG5h3Ex2SQ8">
+            <img alt="" src="/images/firstSubmissionA/product-8.jpg">
+            <h4>Placa de Vídeo Galax NVIDIA Geforce RTX 3070</h4>
+            <div class="classificação">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>R$10.217,53</p>
+        </div>
+        <div class="row">
+            <div class="col-4 item" id="rvDU7xGHpNo">
+                <img alt="" src="/images/firstSubmissionA/product-9.jpg">
+                <h4>Processador Intel Core i7-9700K Coffee Lake</h4>
+                <div class="classificação">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
                 </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p> "Produto muito bom. Atendeu minhas expectativas."</p>
-                    <div class="classificação">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <img alt="" src="/images/firstSubmissionA/user-2.png ">
-                    <h3>Luiza luz</h3>
+                <p>R$2.941,06</p>
+            </div>
+            <div class="col-4 item" id="YntgeH-Me3g">
+                <img alt="" src="/images/firstSubmissionA/product-10.jpg">
+                <h4>Processador Intel Core i7-10700K Marvel´s Avengers Collector´s Edition Packaging</h4>
+                <div class="classificação">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>R$3.176,35</p>
+            </div>
+            <div class="col-4 item" id="p_mrVVPXmzA">
+                <img alt="" src="/images/firstSubmissionA/product-11.jpg">
+                <h4>Placa-Mãe Asus Prime A320M-K/BR, AMD AM4, mATX, DDR4</h4>
+                <div class="classificação">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>R$588,12</p>
+            </div>
+            <div class="col-4 item" id="avwxParyPuI">
+                <img alt="" src="/images/firstSubmissionA/product-12.jpg">
+                <h4>Placa-Mãe Asus ROG Strix B460-G Gaming</h4>
+                <div class="classificação">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>R$1.294,00</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------ Ofertas ------------>
+<div class="ofertas">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img alt="" src="/images/firstSubmissionA/exclusive.png" class="oferta-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusivo na VGA Store</p>
+                <h1>Processador AMD Ryzen Threadripper 3990X</h1>
+                <small>Tempo de renderização irrelevante, torne sua visão criativa uma realidade com o processador para desktop mais poderoso do mundo.
+                    Aprovado por Hollywood - O AMD Ryzen Threadripper da 3ª Geração já demonstrou seu valor para artistas de efeitos especiais de grandes estúdios de cinema.
+                </small>
+                <a class="btn">Compre Agora &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------testemunhas------>
+<div class="testemunha">
+    <div class="small-conteiner">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p> "Produto cumpre o que promete, desempenho de qualidade, só poderia ser Asus."</p>
+                <div class="classificação">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img alt="" src="/images/firstSubmissionA/user-1.png ">
+                <h3>Caio Filho</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p> "Produto muito bom. Atendeu minhas expectativas."</p>
+                <div class="classificação">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img alt="" src="/images/firstSubmissionA/user-2.png ">
+                <h3>Luiza luz</h3>
             </div>
             <div class="col-3">
                 <i class="fa fa-quote-left"></i>
@@ -276,82 +256,37 @@
                 </div>
                 <img alt="" src="/images/firstSubmissionA/user-3.png ">
                 <h3>João carlos</h3>
+            </div>
         </div>
-    </div>
-<!-------marcas------>
-    <div class="marcas">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-5">
-                    <a target="_blank" href="https://www.asus.com/br/">
-                        <img src="/images/firstSubmissionA/logo1.png" alt="Asus">
-                    </a>
-                </div>
-                <div class="col-5">
-                    <a target="_blank" href=https://www.galax.com>
-                        <img src="/images/firstSubmissionA/logo2.png" alt="Galaxy">
-                    </a>
-                </div>
-                <div class="col-5">
-                    <a target="_blank" href="https://www.amd.com/pt">
-                        <img src="/images/firstSubmissionA/logo3.png" alt="Amd">
-                    </a>
-                </div>
-                <div class="col-5">
-                    <a target="_blank" href="https://www.intel.com.br/content/www/br/pt/homepage.html">
-                        <img src="/images/firstSubmissionA/logo5.png" alt="Intel">
-                    </a>
+        <!-------marcas------>
+        <div class="marcas">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <a target="_blank" href="https://www.asus.com/br/">
+                            <img src="/images/firstSubmissionA/logo1.png" alt="Asus">
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a target="_blank" href=https://www.galax.com>
+                            <img src="/images/firstSubmissionA/logo2.png" alt="Galaxy">
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a target="_blank" href="https://www.amd.com/pt">
+                            <img src="/images/firstSubmissionA/logo3.png" alt="Amd">
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a target="_blank" href="https://www.intel.com.br/content/www/br/pt/homepage.html">
+                            <img src="/images/firstSubmissionA/logo5.png" alt="Intel">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 {% endblock %}
-{% block footer %}
-<div class="pe">
-    <div class="container">
-        <div class="row">
-            <div class="pe-col-1">
-                <h3>Faca o download do nosso app!</h3>
-                <p>Download aplicativo para telefones Android e iOs.</p>
-                <div class="app-logo">
-                    <a href="https://play.google.com/store/">
-                        <img src="/images/firstSubmissionA/play-store.png" alt="Google Store">
-                    </a>
-                    <a href="https://www.apple.com/br/app-store/">
-                        <img src="/images/firstSubmissionA/app-store.png" alt="App Store">
-                    </a>
-                </div>
-            </div>
-            <div class="pe-col-2">
-                <img alt="" src="/images/firstSubmissionA/logo-white.png">
-                <p>Nosso objetivo e trazer tecnologia a voce.</p>
-            </div>
-            <div class="pe-col-3">
-                <h3>Links uteis</h3>
-                <ul>
-                    <li>Coupons</li>
-                    <li><a target="_blank" href="https://medium.com/@hardware_club">Blog</a></li>
-                    <li>Politica de privacidade</li>
-                    <li>Entre para o nosso time!</li>
-                </ul>
-            </div>
-            <div class="pe-col-4">
-                <h3>Nos siga</h3>
-                <ul>
-                    <li><a target="_blank" href="https://www.facebook.com">Facebook</a></li>
-                    <li><a target="_blank" href="https://www.twitter.com">Twitter</a></li>
-                    <li><a target="_blank" href="https://www.instagram.com">Instagram</a></li>
-                    <li><a target="_blank" href="https://www.youtube.com" >YouTube</a></li>
-                </ul>
-            </div>
-        </div>
-        <hr>
-        <p class="copyright">Copyright 2021 - Elon/Pedro</p>
-    </div>
-</div>
-</div>
-</div>
-{% endblock %}
+{% block modal %}
 <div class="modal-overlay">
     <div class="modal">
         <a class="close">
@@ -363,4 +298,4 @@
         </div>
     </div>
 </div>
-</body>
+{% endblock %}

@@ -1,10 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/entrega-i-a/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/images/firstSubmissionA/favico.png" type="image/x-icon">
     {% block title %}{% endblock %}
-    {% block header %}{% endblock %}
+    {% block head %}{% endblock %}
 </head>
+<body>
+{% block container1 %}{% endblock %}
+<div class="navbar">
+    <div class="logo">
+        <img alt="" src="/images/firstSubmissionA/logo.png" width="125px">
+    </div>
+    <nav>
+        <ul id="MenuItems">
+            <li><a href="/firstSubmission">Inicio</a></li>
+            <li><a href="/firstSubmission/produto">Produtos</a></li>
+            <li><a href="/firstSubmission/news">Sobre Tech</a></li>
+            <li><a href="/firstSubmission/contato">Contato</a></li>
+            <li><a href="">Conta</a></li>
+        </ul>
+    </nav>
+    <a href="/firstSubmission/cart">
+        <img alt="" src="/images/firstSubmissionA/cart.png" width="30px" height="30px">
+    </a>
+    <img alt="" src="/images/firstSubmissionA/menu.png" class="menu-icon">
+</div>
+{% block container2 %}{% endblock %}
+
 {% block body %}{% endblock %}
-{% block footer %}{% endblock %}
+<div class="pe">
+    <div class="container">
+        <div class="row">
+            <div class="pe-col-1">
+                <h3>Faca o download do nosso app!</h3>
+                <p>Download aplicativo para telefones Android e iOs.</p>
+                <div class="app-logo">
+                    <a href="https://play.google.com/store/">
+                        <img src="/images/firstSubmissionA/play-store.png" alt="Google Store">
+                    </a>
+                    <a href="https://www.apple.com/br/app-store/">
+                        <img src="/images/firstSubmissionA/app-store.png" alt="App Store">
+                    </a>
+                </div>
+            </div>
+            <div class="pe-col-2">
+                <img alt="" src="/images/firstSubmissionA/logo-white.png">
+                <p>Nosso objetivo e trazer tecnologia a voce.</p>
+            </div>
+            <div class="pe-col-3">
+                <h3>Links uteis</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li><a target="_blank" href="https://medium.com/@hardware_club">Blog</a></li>
+                    <li>Politica de privacidade</li>
+                    <li>Entre para o nosso time!</li>
+                </ul>
+            </div>
+            <div class="pe-col-4">
+                <h3>Nos siga</h3>
+                <ul>
+                    <li><a target="_blank" href="http://www.facebook.com">Facebook</a></li>
+                    <li><a target="_blank" href="http://www.twitter.com">Twitter</a></li>
+                    <li><a target="_blank" href="http://www.instagram.com">Instagram</a></li>
+                    <li><a target="_blank" href="http://www.youtube.com" >YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Elon/Pedro</p>
+    </div>
+</div>
+</div>
+</div>
+{% block modal %}{% endblock %}
+
+</body>
 </html>
