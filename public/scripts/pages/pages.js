@@ -1,5 +1,5 @@
 function landingPage(req, res) {
-  return res.render('index.html');
+  return res.render('landingPage.html');
 }
 
 module.exports = {

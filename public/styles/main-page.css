@@ -1,0 +1,51 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #383838;
+}
+
+.container{
+    margin: 0 4vw;
+}
+
+#main-content{
+    position: absolute;
+    margin-top: 6vh;
+}
+
+.landing-page-title{
+    display: flex;
+    align-items: center;
+}
+
+#landing-page-txt{
+    color: #C8C8C8;
+    margin: auto 4vw;
+}
+
+#unifor-logo{
+    width: 121px;
+    height: 131px;
+    left: 38px;
+    top: 46px;
+    margin-left: 4vw;
+}
+
+.posts{
+    display: flex;
+    justify-content: center;
+}
+
+.link-to-pages{
+    margin: 16px 32px;
+}
+
+#background-img{
+    width: auto;
+    height: auto;
+    bottom: 0;
+}
