@@ -4,7 +4,7 @@ const firstPage = require("./pages/firstPage");
 const thirdPage = require("./pages/thirdPage")
 
 const express = require("express");
-const path = require("path");
+// const path = require("path");
 const nunjucks = require("nunjucks");
 
 const app = express();
