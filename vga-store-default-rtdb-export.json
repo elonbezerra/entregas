@@ -1,0 +1,71 @@
+{
+  "Produtos" : {
+    "Prod-001" : {
+      "imagem" : "x",
+      "nome" : "x",
+      "preco" : "x",
+      "quantidade" : "x",
+      "sobre" : "x",
+      "tipo" : "x"
+    },
+    "Prod-002" : {
+      "imagem" : "x",
+      "nome" : "x",
+      "preco" : "x",
+      "quantidade" : "x",
+      "sobre" : "x",
+      "tipo" : "x"
+    }
+  },
+  "clientes" : {
+    "cliente-001" : {
+      "cpf" : "x",
+      "dataDeNascimento" : "x",
+      "email" : "x",
+      "endereco" : "x",
+      "nome" : "x",
+      "pedidos" : {
+        "pedido-001" : {
+          "orderid" : "",
+          "precoUnidade" : "",
+          "produtoId" : "",
+          "produtoNome" : "",
+          "quantidade" : "",
+          "subtotal" : ""
+        },
+        "pedido-002" : {
+          "orderid" : "",
+          "precoUnidade" : "",
+          "produtoId" : "",
+          "produtoNome" : "",
+          "quantidade" : "",
+          "subtotal" : ""
+        }
+      },
+      "rg" : "x"
+    },
+    "cliente-002" : {
+      "cpf" : "x",
+      "dataDeNascimento" : "x",
+      "email" : "x",
+      "endereco" : "x",
+      "nome" : "x",
+      "pedidos" : {
+        "pedido-001" : "cod-01",
+        "pedido-002" : "cod-02"
+      },
+      "rg" : "x"
+    }
+  },
+  "loja" : {
+    "pedidos" : {
+      "pedido-001" : {
+        "cliente" : "x",
+        "codigo" : "x",
+        "data" : "x",
+        "produto" : "x",
+        "quantidade" : "x"
+      }
+    }
+  }
+}
