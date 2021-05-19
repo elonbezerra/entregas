@@ -5,10 +5,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
-    "start": "node ./public/scripts/server.js"
+    "start": "nodemon ./public/scripts/server.js"
   },
   "dependencies": {
     "express": "^4.17.1",
+    "firebase": "^8.6.1",
     "nunjucks": "^3.2.3"
   },
   "devDependencies": {
